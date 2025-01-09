@@ -6,17 +6,13 @@
     <title>Conference Alert</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
 </head>
 <body>
 
 
    <!-- Header -->
-   <header class="header fixed top-0 left-0 w-full bg-transparent text-white shadow-md z-50">
+   <header class="header fixed top-0 left-0 w-full bg-transparent text-white shadow-md z-50 transition-all ease-in-out">
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
       <!-- Logo -->
       <div class="text-lg font-bold">Logo</div>
@@ -235,7 +231,7 @@
         </div>
     </section>
 
-    <section class="py-12 bg-gray-100">
+    <section class="py-12 bg-[#fef8f7]">
         <div class="container max-w-[1200px] mx-auto px-2 py-12 flex flex-col justify-center gap-5">
             <h2 class="text-center text-4xl font-bold md:mb-3">Upcoming Conferences</h2>
             <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
@@ -321,123 +317,831 @@
         </div>
     </section>
 
-    <section class="py-12">
+    
+ <section class="py-12">
         <div class="continer max-w-[1200px] mx-auto px-2 py-12">
             <h2 class="text-center text-4xl font-bold md:mb-3">Conference by Continents</h2>
             <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
-            <div class="grid grid-cols-3 continents">
-                <div class="flex flex-col justify-center align-middle country-card ">
-                    <h3 class="text-center text-[22px] font-semibold bg-blue-950 text-white p-2 rounded-t-md md:mb-2">Asia</h3>
-                    <ul class="grid grid-cols-2 gap-3  max-h-[300px] mx-auto">
+            
+            <div class="w-full">
+              <div class="relative right-0 border">
+                <ul class="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-[#fef8f7] text-lg " data-tabs="tabs" role="list">
+                  <!-- Asia Tab -->
+                  <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-lg mb-0 transition-all ease-in-out border-0 rounded-md cursor-pointer text-black bg-inherit"
+                       data-tab-target="" role="tab" aria-selected="true" aria-controls="dashboard">
+                       <i class="bi bi-globe-central-south-asia mr-2 text-[20px]"></i> Asia
+                    </a>
+                  </li>
+                  <!-- Europe Tab -->
+                  <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 mb-0 text-lg transition-all ease-in-out border-0 rounded-lg cursor-pointer text-black bg-inherit"
+                       data-tab-target="" role="tab" aria-selected="false" aria-controls="profile">
+                      <i class="bi bi-globe-europe-africa mr-2 text-[20px]"></i> Europe
+                    </a>
+                  </li>
+                  <!-- Africa Tab -->
+                  <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-lg mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-700 bg-inherit"
+                       data-tab-target="" role="tab" aria-selected="false" aria-controls="settings">
+                       <i class="bi bi-globe-europe-africa mr-2 text-[20px]"></i> Africa
+                    </a>
+                  </li>
+                  <!-- Oceania Tab -->
+                  <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-lg mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-black bg-inherit"
+                       data-tab-target="" role="tab" aria-selected="false" aria-controls="oceania">
+                      <i class="bi bi-globe-asia-australia mr-2 text-[20px]"></i> Oceania
+                    </a>
+                  </li>
+                  <!-- North America Tab -->
+                  <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-lg mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-black bg-inherit"
+                       data-tab-target="" role="tab" aria-selected="false" aria-controls="north-america">
+                      <i class="bi bi-globe-americas mr-2 text-[20px]"></i> North America
+                    </a>
+                  </li>
+                  <!-- South America Tab -->
+                  <li class="z-30 flex-auto text-center">
+                    <a class="z-30 flex items-center justify-center w-full px-0 py-2 text-lg mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-black bg-inherit"
+                       data-tab-target="" role="tab" aria-selected="false" aria-controls="south-america">
+                      <i class="bi bi-globe-americas mr-2 text-[20px]"></i> South America
+                    </a>
+                  </li>
+                </ul>
+            
+                <div data-tab-content="" class="p-5 md:w-[90%] mx-auto">
+                  <!-- Asia Content -->
+                  <div id="dashboard" role="tabpanel">
+                    
+                      <ul class="grid md:grid-cols-4 sm:gid-cols-3 grid-cols-2 text-lg gap-y-4">
                         <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Japan
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Bahrain
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Indonesia
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> South Korea
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Thailand
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Japan
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Bahrain
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Indonesia
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> South Korea
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Thailand
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Azerbaijan
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Hong Kong
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> UAE
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Maldives
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Lebanon
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> China
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Oman
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Saudi Arabia
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Malaysia
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> India
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Turkey
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Russia
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Kuwait
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Bangladesh
+                          </a>
+                        </li>
+                        <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                            <i class="bi bi-geo-alt mr-2"></i> Iran
+                          </a>
+                        </li>
+                      </ul>
+                    
+                  </div>
+                  <!-- Europe Content -->
+                  <div class="hidden opacity-0" id="profile" role="tabpanel">
+                    <ul class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-lg gap-y-4">
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Albania
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Andorra
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Armenia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Austria
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
                               <i class="bi bi-geo-alt mr-2"></i> Azerbaijan
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Hong Kong
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> UAE
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Maldives
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Lebanon
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> China
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Oman
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Saudi Arabia
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Malaysia
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> India
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Turkey
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Russia
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Kuwait
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Bangladesh
-                            </a>
-                          </li>
-                          <li class="country">
-                            <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
-                              <i class="bi bi-geo-alt mr-2"></i> Iran
-                            </a>
-                          </li>
-                    </ul>
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Belarus
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Belgium
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Bosnia and Herzegovina
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Bulgaria
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Croatia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Cyprus
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Czech Republic
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Denmark
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Estonia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Finland
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> France
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Georgia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Germany
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Greece
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Hungary
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Iceland
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Ireland
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Italy
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Kosovo
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Latvia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Lithuania
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Luxembourg
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Malta
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Moldova
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Monaco
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Montenegro
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Netherlands
+                          </a>
+                      </li>
+                      
+                  </ul>
+                  
+                  </div>
+                  <!-- Africa Content -->
+                  <div class="hidden opacity-0" id="settings" role="tabpanel">
+                    <ul class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-lg gap-y-4">
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Australia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Fiji
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Kiribati
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Marshall Islands
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Micronesia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> New Zealand
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Palau
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Papua New Guinea
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Samoa
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Solomon Islands
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Tonga
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Tuvalu
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Vanuatu
+                          </a>
+                      </li>
+                  </ul>
+                  
+                  </div>
+                  <!-- Oceania Content -->
+                  <div class="hidden opacity-0" id="oceania" role="tabpanel">
+                    <ul class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-lg gap-y-4">
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Algeria
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Angola
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Benin
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Botswana
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Burkina Faso
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Burundi
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Cabo Verde
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Cameroun
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Central African Republic
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Chad
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Comoros
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Djibouti
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Egypt
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Equatorial Guinea
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Eritrea
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Eswatini
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Ethiopia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Gabon
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> The Gambia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Ghana
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Guinea
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Guinea-Bissau
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Ivory Coast
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Kenya
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Lesotho
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Liberia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Libya
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Madagascar
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Malawi
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Mali
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Mauritania
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Mauritius
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Morocco
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Mozambique
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Namibia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Niger
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Nigeria
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Rwanda
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> São Tomé and Príncipe
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Senegal
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Seychelles
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Sierra Leone
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Somalia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> South Africa
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> South Sudan
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Sudan
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Togo
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Tunisia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Uganda
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Zambia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Zimbabwe
+                          </a>
+                      </li>
+                  </ul>
+                  
+                  </div>
+                  <!-- North America Content -->
+                  <div class="hidden opacity-0" id="north-america" role="tabpanel">
+                    <ul class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-lg gap-y-4">
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Bahamas
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Cuba
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Greenland
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Mexico
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Barbados
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Dominica
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Haiti
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Panama
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Canada
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Dominican Republic
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Honduras
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Puerto Rico
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Costa Rica
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> El Salvador
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Jamaica
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> USA
+                          </a>
+                      </li>
+                  </ul>
+                  
+                  </div>
+                  <!-- South America Content -->
+                  <div class="hidden opacity-0" id="south-america" role="tabpanel">
+                    <ul class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-lg gap-y-4">
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Argentina
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Chile
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Peru
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Bolivia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Ecuador
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Suriname
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Brazil
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Guyana
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Uruguay
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Colombia
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Paraguay
+                          </a>
+                      </li>
+                      <li class="country">
+                          <a href="#" class="flex items-center text-blue-950 hover:text-red-500 transition-all">
+                              <i class="bi bi-geo-alt mr-2"></i> Venezuela
+                          </a>
+                      </li>
+                  </ul>
+                  
+                  </div>
                 </div>
+              </div>
             </div>
+            
+
+
         </div>
-    </section>
+              
+ 
+        <!-- from cdn -->
+        <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js"></script>
 
-
-   
-
+    </section> 
 
     <script src="assets/js/script.js"></script>
 </body>
