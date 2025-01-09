@@ -1,12 +1,15 @@
 //  Change header styles on scroll
 const header = document.querySelector('.header');
+const headerSearchField = document.querySelector('.search-field');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) {
     header.classList.add('bg-white', 'text-black');
     header.classList.remove('bg-transparent', 'text-white');
+    headerSearchField.classList.remove('bg-transparent');
   } else {
     header.classList.add('bg-transparent', 'text-white');
     header.classList.remove('bg-white', 'text-black');
+    headerSearchField.classList.add('bg-transparent');
   }
 });
 
