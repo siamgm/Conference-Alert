@@ -16,7 +16,7 @@
    <header class="header fixed top-0 left-0 w-full bg-transparent text-white shadow-md z-50 transition-all ease-in-out">
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
       <!-- Logo -->
-      <div class="text-lg font-bold">Logo</div>
+      <div class="font-bold text-xl">Logo</div>
 
       <!-- Navigation -->
       <nav class="flex items-center space-x-6">
@@ -916,16 +916,62 @@
                 </div>
               </div>
             </div>
-            
-
-
         </div>
               
- 
         <!-- from cdn -->
         <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js"></script>
 
     </section> 
+
+
+    <section class="py-12">
+      <div class="container max-w-[1200px] mx-auto px-2 py-12">
+        
+
+        <div class="border border-gray-300 rounded-md">
+          <!-- Tab Headers -->
+          <div class="flex border-b border-gray-300 justify-center gap-2">
+            <button 
+                class="tab-header py-2 px-4 text-center bg-red-500 text-white font-medium  active-tab relative before:content-[''] before:block before:absolute before:w-full before:h-0 before:top-0 before:left-0 before:bg-red-500 before:rounded-md before:opacity-0 before:transition-all before:duration-300 before:ease-in-out"
+                onclick="switchTab(event, 'tab1')"
+            >
+                Tab 1
+            </button>
+            <button 
+                class="tab-header py-2 px-4 text-center bg-gray-100 text-gray-700 font-medium hover:bg-gray-200"
+                onclick="switchTab(event, 'tab2')"
+            >
+                Tab 2
+            </button>
+            <button 
+                class="tab-header py-2 px-4 text-center bg-gray-100 text-gray-700 font-medium hover:bg-gray-200"
+                onclick="switchTab(event, 'tab3')"
+            >
+                Tab 3
+            </button>
+        </div>
+          <!-- Tab Content -->
+          <div class="p-4">
+              <div id="tab1" class="tab-content">
+                  <h2 class="text-2xl font-semibold mb-2">Content for Tab 1</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula.</p>
+              </div>
+              <div id="tab2" class="tab-content hidden">
+                  <h2 class="text-2xl font-semibold mb-2">Content for Tab 2</h2>
+                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
+              </div>
+              <div id="tab3" class="tab-content hidden">
+                  <h2 class="text-2xl font-semibold mb-2">Content for Tab 3</h2>
+                  <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+              </div>
+          </div>
+      </div>
+
+        
+      </div>
+    </section>
+
+    
 
 <!-- conference bt months  -->
 
@@ -1032,6 +1078,121 @@
         </div>
       </div>
     </section>
+
+    <footer class="bg-[#fef8f7]">
+      <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div>
+            <div class="text-5xl">
+              LOGO
+            </div>
+    
+            <p class="mt-4 max-w-xs text-gray-500">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
+              molestias.
+            </p>
+    
+            <ul class="mt-8 flex gap-6 text-red-500 text-[28px] ">
+              <li><a href="#"><i class="bi bi-facebook hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter-x hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+            </ul>
+          </div>
+    
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+            <div>
+              <p class="font-medium text-gray-900">Services</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Company</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Helpful Links</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Legal</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <p class="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+
 
     <script src="assets/js/script.js"></script>
 </body>
