@@ -17,45 +17,21 @@ window.addEventListener('scroll', () => {
 // Toggle menu for small screens
 
 const menu = document.getElementById('menu');
- document.getElementById('menu-toggle').addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('text-black');
-    menu.classList.toggle('top-[70px]');
- 
-  });
-
-
-//   tabs
-
-// Get all tab buttons and tab contents
-const tabButtons = document.querySelectorAll('.tab-button');
-const tabContents = document.querySelectorAll('.tab-content');
-
-// Add click event listener to each tab button
-tabButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const targetTab = button.getAttribute('data-tab');
-
-    // Remove active state from all buttons
-    tabButtons.forEach(btn => {
-      btn.classList.remove('border-blue-500', 'text-blue-500');
-    });
-
-    // Hide all tab contents
-    tabContents.forEach(content => {
-      content.classList.add('hidden');
-    });
-
-    // Activate the clicked button and show the associated tab content
-    button.classList.add('border-blue-500', 'text-blue-500');
-    document.getElementById(targetTab).classList.remove('hidden');
-  });
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+  menu.classList.toggle('text-black');
+  menu.classList.toggle('top-[70px]');
 });
 
-// Set the first tab as active by default
-if (tabButtons.length > 0) {
-  tabButtons[0].click();
-}
+// Collapse menu when clicking on anything inside the menu
+menu.addEventListener('click', (event) => {
+  if (event.target !== menu) {
+    menu.classList.add('hidden');
+    menu.classList.remove('text-black');
+    menu.classList.remove('top-[70px]');
+  }
+});
+
 
 
 
