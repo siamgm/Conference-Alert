@@ -3,12 +3,12 @@ const header = document.querySelector('.header');
 const headerSearchField = document.querySelector('.search-field');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 60) {
-    header.classList.add('bg-white', 'text-black');
+    header.classList.add('bg-white', 'md:text-black');
     header.classList.remove('bg-transparent', 'text-white');
     headerSearchField.classList.remove('bg-transparent');
   } else {
     header.classList.add('bg-transparent', 'text-white');
-    header.classList.remove('bg-white', 'text-black');
+    header.classList.remove('bg-white', 'md:text-black');
     headerSearchField.classList.add('bg-transparent');
   }
 });
@@ -19,6 +19,9 @@ window.addEventListener('scroll', () => {
 const menu = document.getElementById('menu');
  document.getElementById('menu-toggle').addEventListener('click', () => {
     menu.classList.toggle('hidden');
+    menu.classList.toggle('text-black');
+    menu.classList.toggle('top-[70px]');
+ 
   });
 
 

@@ -16,48 +16,47 @@
    <!-- Header -->
     
    <header class="header fixed top-0 left-0 w-full bg-transparent  text-white shadow-md z-50 transition-all ease-in-out">
-    <div class="container mx-auto flex items-center justify-between gap-3 py-4 px-6">
+    <div class="container mx-auto flex items-center justify-between gap-3 py-4 px-6 relative">
       <!-- Logo -->
       <div class="font-bold text-xl">Logo</div>
 
       <!-- Navigation -->
-      <nav id="menu" class="md:flex items-center space-x-6 hidden">
-        <a href="#" class="hover:text-red-500 transition-all">Home</a>
-        <a href="#" class="hover:text-red-500 transition-all">Search</a>
-        <a href="#" class="hover:text-red-500 transition-all">Single Page</a>
-        <a href="#" class="hover:text-red-500 transition-all">Category</a>
+      <nav id="menu" class="md:flex md:items-center space-x-6 hidden md:relative absolute md:bg-transparent bg-white top-0 left-0 md:py-0 px-0 md:flex-row md:gap-0 md:w-fit w-full flex-col gap-4 py-8">
+        <ul class="list-none flex md:flex-row flex-col md:ml-0 ml-6 md:space-x-6 space-y-4 md:space-y-0 w-full md:w-auto ">
+        <li><a href="#" class="hover:text-red-500 transition-all">Home</a></li>
+        <li><a href="#" class="hover:text-red-500 transition-all">Search</a></li>
+        <li><a href="#" class="hover:text-red-500 transition-all">Single Page</a></li>
+        <li><a href="#" class="hover:text-red-500 transition-all">Category</a></li>
+        </ul>
         <!-- Search Field -->
-        <div class="relative">
+        <div class="relative md:w-auto md:mb-0 mb-6">
           <input
-            type="text"
-            placeholder="Search..."
-            class="pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:ring focus:ring-red-300 search-field"
+        type="text"
+        placeholder="Search..."
+        class="pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:ring focus:ring-red-300 search-field md:w-full md:w-auto"
           />
           <button
-            type="button"
-            class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-black"
+        type="button"
+        class="search-btn absolute right-2 top-0 translate-y-1/2 text-gray-500 hover:text-black"
           >
-            <i class="bi bi-search"></i>
+        <i class="bi bi-search"></i>
           </button>
         </div>
          <!-- Button -->
-      <a href="#" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out">
-        <i class="bi bi-plus-lg"></i> Add Event
-      </a>
+        <a href="#" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out w-full md:w-auto text-center">
+          <i class="bi bi-plus-lg"></i> Add Event
+        </a>
       </nav>
 
-      <i id="menu-toggle" class="bi bi-list md:hidden block cursor-pointer text-[25px]"></i>
-
-     
-    </div>
+      <i id="menu-toggle" class="bi bi-list md:hidden block cursor-pointer text-[25px] relative "></i>
   </header>
 
 <!-- hero section  -->
-    <section class="relative bg-[url('assets/images/hero-bg.webp')] bg-cover bg-center h-screen text-white py-12 flex flex-col justify-center items-center before:absolute before:inset-0 before:bg-blue-950 before:bg-opacity-80 before:content-['']">
+    <section class="relative bg-[url('assets/images/hero-bg.webp')] bg-cover bg-center text-white py-12 flex flex-col justify-center items-center before:absolute before:inset-0 before:bg-blue-950 before:bg-opacity-80 before:content-['']">
 
         <div class="container max-w-[1200px] mx-auto py-12 flex flex-col justify-center items-center gap-5 px-2 relative">
 
-            <h1 class="text-center md:text-[80px] text-[32px] md:w-4/5 " style="font-family: 'Staatliches', serif;">Welcome to Conference Alert</h1>
+            <h1 class="text-center md:text-[80px] mt-12 text-[32px] md:w-4/5 " style="font-family: 'Staatliches', serif;">Welcome to Conference Alert</h1>
 
             <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
 
@@ -133,65 +132,65 @@
     </section>
     
     <!-- Conferences  -->
-    <section class="py-12">
+    <section class="md:py-12">
         <div class="container max-w-[1200px] mx-auto py-12 flex flex-col justify-center gap-5 px-2">
             <h2 class="text-center text-4xl font-bold md:mb-3">Upcoming Conferences</h2>
             <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
              <!-- Table -->
-    <div class="overflow-x-auto bg-white shadow-md rounded-lg">
-        <table class="w-full border-collapse border border-gray-300">
-          <thead class="bg-red-500 text-white">
+    <div class="overflow-x-auto bg-white shadow-md ">
+        <table class="w-full border-collapse shadow-lg rounded-lg overflow-hidden">
+          <thead class="bg-red-400 text-white">
             <tr>
-              <th class="p-4 text-left border border-gray-300">Date</th>
-              <th class="p-4 text-left border border-gray-300">Conference Name</th>
-              <th class="p-4 text-left border border-gray-300">Venue</th>
+              <th class="p-4 text-left">Date</th>
+              <th class="p-4 text-left">Conference Name</th>
+              <th class="p-4 text-left">Venue</th>
             </tr>
           </thead>
-          <tbody class="text-gray-600">
-            <tr class="hover:bg-red-300">
-              <td class="p-4 border border-gray-300">05 Feb</td>
-              <td class="p-4 border border-gray-300">Global Conference on Artificial Intelligence</td>
-              <td class="p-4 border border-gray-300">New York, USA</td>
+          <tbody class="text-gray-600 bg-white">
+            <tr class="hover:bg-red-300 hover:text-white">
+              <td class="p-4">05 Feb</td>
+              <td class="p-4">Global Conference on Artificial Intelligence</td>
+              <td class="p-4">New York, USA</td>
             </tr>
-            <tr class="bg-[#fef8f7] hover:bg-red-300">
-              <td class="p-4 border border-gray-300">12 Mar</td>
-              <td class="p-4 border border-gray-300">World Conference on Renewable Energy</td>
-              <td class="p-4 border border-gray-300">Berlin, Germany</td>
+            <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+              <td class="p-4">12 Mar</td>
+              <td class="p-4">World Conference on Renewable Energy</td>
+              <td class="p-4">Berlin, Germany</td>
             </tr>
-            <tr class="hover:bg-red-300">
-              <td class="p-4 border border-gray-300">18 Apr</td>
-              <td class="p-4 border border-gray-300">International Conference on Medical Sciences</td>
-              <td class="p-4 border border-gray-300">Tokyo, Japan</td>
+            <tr class="hover:bg-red-300  hover:text-white">
+              <td class="p-4">18 Apr</td>
+              <td class="p-4">International Conference on Medical Sciences</td>
+              <td class="p-4">Tokyo, Japan</td>
             </tr>
-            <tr class="bg-[#fef8f7] hover:bg-red-300">
-              <td class="p-4 border border-gray-300">25 May</td>
-              <td class="p-4 border border-gray-300">International Conference on Environmental Studies</td>
-              <td class="p-4 border border-gray-300">Cape Town, South Africa</td>
+            <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+              <td class="p-4">25 May</td>
+              <td class="p-4">International Conference on Environmental Studies</td>
+              <td class="p-4">Cape Town, South Africa</td>
             </tr>
-            <tr class="hover:bg-red-300">
-              <td class="p-4 border border-gray-300">10 Jun</td>
-              <td class="p-4 border border-gray-300">Conference on Modern Business Management</td>
-              <td class="p-4 border border-gray-300">Dubai, UAE</td>
+            <tr class="hover:bg-red-300  hover:text-white">
+              <td class="p-4">10 Jun</td>
+              <td class="p-4">Conference on Modern Business Management</td>
+              <td class="p-4">Dubai, UAE</td>
             </tr>
-            <tr class="bg-[#fef8f7] hover:bg-red-300">
-              <td class="p-4 border border-gray-300">15 Jul</td>
-              <td class="p-4 border border-gray-300">Global Conference on Data Science</td>
-              <td class="p-4 border border-gray-300">San Francisco, USA</td>
+            <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+              <td class="p-4">15 Jul</td>
+              <td class="p-4">Global Conference on Data Science</td>
+              <td class="p-4">San Francisco, USA</td>
             </tr>
-            <tr class="hover:bg-red-300">
-              <td class="p-4 border border-gray-300">20 Aug</td>
-              <td class="p-4 border border-gray-300">International Conference on Robotics</td>
-              <td class="p-4 border border-gray-300">Seoul, South Korea</td>
+            <tr class="hover:bg-red-300  hover:text-white">
+              <td class="p-4">20 Aug</td>
+              <td class="p-4">International Conference on Robotics</td>
+              <td class="p-4">Seoul, South Korea</td>
             </tr>
-            <tr class="bg-[#fef8f7] hover:bg-red-300">
-              <td class="p-4 border border-gray-300">05 Sep</td>
-              <td class="p-4 border border-gray-300">World Conference on Biotechnology</td>
-              <td class="p-4 border border-gray-300">London, UK</td>
+            <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+              <td class="p-4">05 Sep</td>
+              <td class="p-4">World Conference on Biotechnology</td>
+              <td class="p-4">London, UK</td>
             </tr>
-            <tr class="hover:bg-red-300">
-              <td class="p-4 border border-gray-300">30 Oct</td>
-              <td class="p-4 border border-gray-300">International Conference on Cloud Computing</td>
-              <td class="p-4 border border-gray-300">Toronto, Canada</td>
+            <tr class="hover:bg-red-300  hover:text-white">
+              <td class="p-4">30 Oct</td>
+              <td class="p-4">International Conference on Cloud Computing</td>
+              <td class="p-4">Toronto, Canada</td>
             </tr>
           </tbody>
         </table>
@@ -241,7 +240,7 @@
 <!-- conference by category  -->
 
     <section class="py-12 bg-[#fef8f7]">
-        <div class="container max-w-[1200px] mx-auto px-2 py-12 flex flex-col justify-center gap-5">
+        <div class="container max-w-[1200px] mx-auto px-2 md:py-12 flex flex-col justify-center gap-5">
             <h2 class="text-center text-4xl font-bold md:mb-3">Conference by Category</h2>
             <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
 
@@ -329,7 +328,7 @@
     
 <!-- conference by country  -->
 
-    <section class="py-12">
+    <section class="md:py-12">
       <div class="container max-w-[1200px] mx-auto px-2 py-12 flex flex-col justify-center gap-5">
 
         <h2 class="text-center text-4xl font-bold md:mb-3">Upcoming Conferences</h2>
@@ -742,84 +741,64 @@
               <div id="tab5" class="tab-content hidden">
                 <ul class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-lg border border-red-100 md:rounded-l-md rounded-r-none md:rounded-b-none rounded-b-md">
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Bahamas
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Argentina
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Cuba
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Bolivia
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Greenland
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Brazil
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Mexico
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Chile
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Barbados
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Colombia
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Dominica
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Ecuador
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Haiti
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Guyana
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Panama
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Paraguay
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Canada
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Peru
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Dominican Republic
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Suriname
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Honduras
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Uruguay
+                      </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Puerto Rico
-                        </a>
-                    </li>
-                    <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Costa Rica
-                        </a>
-                    </li>
-                    <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            El Salvador
-                        </a>
-                    </li>
-                    <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            Jamaica
-                        </a>
-                    </li>
-                    <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
-                            USA
-                        </a>
+                      <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        Venezuela
+                      </a>
                     </li>
                   </ul>
               </div>
@@ -901,7 +880,7 @@
 <!-- conference bt months  -->
 
     <section class="py-12 bg-[#fef8f7]">
-      <div class="container max-w-[1200px] mx-auto px-2 py-12 flex flex-col justify-center gap-5">
+      <div class="container max-w-[1200px] mx-auto px-2 md:py-12 flex flex-col justify-center gap-5">
         <h2 class="text-center text-4xl font-bold md:mb-3">Conference by Months</h2>
             <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
         <ul class="months list-none grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4 grid-cols-2 md:gap-8 sm:gap-5 gap-3 ">
@@ -985,7 +964,7 @@
 
 <!-- conference by topics  -->
 
-<section class="py-12">
+<section class="md:py-12">
   <div class="container max-w-[1200px] mx-auto px-2 py-12 flex flex-col justify-center gap-5">
     <h2 class="text-center text-4xl font-bold md:mb-3">Conference by Topics</h2>
             <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
@@ -1014,62 +993,62 @@
       <ul class="grid md:grid-cols-2 grid-cols-1 gap-3">
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-calculator mr-2"></i> Accounting
+            <i class="bi bi-check2-all"></i> Accounting
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-cart mr-2"></i> E-commerce
+            <i class="bi bi-check2-all"></i>E-commerce
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-shield-check mr-2"></i> Insurance
+            <i class="bi bi-check2-all"></i> Insurance
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-bank mr-2"></i> Banking and Finance
+            <i class="bi bi-check2-all"></i>Banking and Finance
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-graph-up-arrow mr-2"></i> Economics
+            <i class="bi bi-check2-all"></i> Economics
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-people mr-2"></i> Management
+            <i class="bi bi-check2-all"></i> Management
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-briefcase mr-2"></i> Business
+            <i class="bi bi-check2-all"></i> Business
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-lightbulb mr-2"></i> Entrepreneurship
+            <i class="bi bi-check2-all"></i> Entrepreneurship
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-megaphone mr-2"></i> Marketing
+            <i class="bi bi-check2-all"></i></i> Marketing
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-shield-lock mr-2"></i> Business Ethics
+            <i class="bi bi-check2-all"></i>Business Ethics
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-person-workspace mr-2"></i> Human Resources
+            <i class="bi bi-check2-all"></i> Human Resources
           </a>
         </li>
         <li class="w-full">
           <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
-            <i class="bi bi-truck mr-2"></i> Supply Chain and Logistics
+            <i class="bi bi-check2-all"></i> Supply Chain and Logistics
           </a>
         </li>
       
@@ -1081,12 +1060,9 @@
 
 
     <!-- about section  -->
-    <section class="py-12">
+    <section class="md:py-12">
       <div class="container max-w-[1200px] mx-auto px-2 py-12 flex gap-5">
-        <div class="md:w-1/2 bg-[url('assets/images/about-us.webp')] min-h-[400px] bg-cover bg-center rounded-sm">
-        </div>
-
-        <div class="md:w-1/2 w-full flex flex-col justify-center  items-start gap-5">
+        <div class="md:w-1/2 w-full flex flex-col  items-start gap-5">
           <h2 class="text-4xl font-bold md:mb-3">About International Conference Alerts 2024-2025</h2>
 
           <p>Welcome to Upcoming Conference Alert , your dedicated platform for finding and staying up-to-date on academic, scientific, and professional conferences worldwide. At Upcoming Conference Alert, we believe that knowledge-sharing events are essential for advancing academic, scientific, and professional communities. We provide comprehensive listings and timely alerts to connect scholars, researchers, Ph.D. candidates, and professionals with conferences that fit their interests and expertise, all on a single, easy-to-navigate platform.</p>
@@ -1094,6 +1070,9 @@
           <a href="#" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out">
              Read More <i class="bi bi-arrow-right-circle ml-2 text-lg"></i>
           </a>
+        </div>
+
+        <div class="md:w-1/2 bg-[url('assets/images/about-us.webp')] min-h-[400px] bg-cover bg-center rounded-md">
         </div>
       </div>
     </section>
