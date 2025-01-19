@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+
+   <!-- Header -->
+    
+   <header class="header fixed top-0 left-0 w-full bg-transparent  text-white shadow-md z-50 transition-all ease-in-out">
+    <div class="container mx-auto flex items-center justify-between gap-3 py-4 px-6 relative">
+      <!-- Logo -->
+      <div class="font-bold text-xl">Logo</div>
+
+      <!-- Navigation -->
+      <nav id="menu" class="md:flex md:items-center space-x-6 hidden md:relative absolute md:bg-transparent bg-white top-0 left-0 md:py-0 px-0 md:flex-row md:gap-0 md:w-fit w-full flex-col gap-4 py-8">
+        <ul class="list-none flex md:flex-row flex-col md:ml-0 ml-6 md:space-x-6 space-y-4 md:space-y-0 w-full md:w-auto ">
+        <li><a href="/index.html" class="hover:text-red-500 transition-all">Home</a></li>
+        <li><a href="/pages/search.html" class="hover:text-red-500 transition-all">Search</a></li>
+        <li><a href="/pages/single-page.html" class="hover:text-red-500 transition-all">Single Page</a></li>
+        <li><a href="/pages/categoy.html" class="hover:text-red-500 transition-all">Category</a></li>
+        <li><a href="/pages/blog.html" class="hover:text-red-500 transition-all">Blog</a></li>
+        <li><a href="/pages/single-post.html" class="hover:text-red-500 transition-all">Single Post</a></li>
+        </ul>
+        <!-- Search Field -->
+        <div class="relative md:w-auto md:mb-0 mb-6">
+          <input
+        type="text"
+        placeholder="Search..."
+        class="pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:ring focus:ring-red-300 search-field md:w-full md:w-auto"
+          />
+          <button
+        type="button"
+        class="search-btn absolute right-2 top-0 translate-y-1/2 text-gray-500 hover:text-black"
+          >
+        <i class="bi bi-search"></i>
+          </button>
+        </div>
+         <!-- Button -->
+        <a href="/pages/add-event.html" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out w-full md:w-auto text-center">
+          <i class="bi bi-plus-lg"></i> Add Event
+        </a>
+      </nav>
+
+      <i id="menu-toggle" class="bi bi-list md:hidden block cursor-pointer text-[25px] relative "></i>
+  </header>
+  <main>
+<!-- hero section  -->
+    <section class="relative bg-[url('../assets/images/hero-bg.webp')] bg-cover bg-center text-white md:py-12 py-8 flex flex-col justify-center items-center before:absolute before:inset-0 before:bg-blue-950 before:bg-opacity-80 before:content-['']">
+
+        <div class="container max-w-[1200px] mx-auto md:py-12 flex flex-col justify-center items-center gap-5 px-2 relative">
+
+            <h1 class="text-center md:text-[80px] mt-12 text-[32px] md:w-4/5 " style="font-family: 'Staatliches', serif;">Add Your Events</h1>
+
+            <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg"><a href="#">Home</a> | <a href="#">Add Event</a></p>
+        </div>
+    </section>
+    
+    <!-- Form  -->
+    <section class="md:py-12 bg-[#fef8f7]">
+        <div class="container max-w-[1200px] mx-auto md:my-12 p-6 flex flex-col justify-center gap-5 px-2 bg-white rounded-lg shadow-md">
+            <h2 class="text-center text-4xl font-bold md:mb-5">Add Your Events</h2>
+        <form class="md:p-6">
+
+                <h3 class="inline-block ml-6 md:translate-y-8 translate-y-4 bg-white text-red-500 text-2xl font-bold md:mb-5">Event Organizer Details</h3>
+
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 border border-red-300 rounded-lg p-6">
+                <div class="relative z-0 w-full mb-5 group md:col-span-2">
+                    <input type="text" name="organizer-name" id="organizer-name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="organizer-name" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Organizer Name</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="name-of-organization" id="name-of-organization" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="name-of-organization" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name of Organization</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="email" name="event_email" id="event_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="event_email" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Organizer Email</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="password" name="password" id="password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="password" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="password" name="confirm-password" id="confirm-password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="confirm-password" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm Password</label>
+                </div>
+
+            </div>
+
+                <!-- event details  -->
+
+                <h3 class="inline-block ml-6 md:translate-y-8 translate-y-4 bg-white text-red-500 text-2xl font-bold md:mb-5 md:mt-12 mt-4">Event Details</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 border border-red-300 rounded-lg p-6 mb-6">
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="event-name" id="event-name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="event-name" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Event Name</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <select name="event_type" id="event_type" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" required>
+                        <option value="" disabled selected>Event Type</option>
+                        <option value="conference">Conference</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="workshop">Workshop</option>
+                    </select>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <select name="event_category" id="event_category" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" required>
+                        <option value="" disabled selected>Event Category</option>
+                        <option value="conference">Conference</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="workshop">Workshop</option>
+                    </select>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <select name="event_topic" id="event_topic" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" required>
+                        <option value="" disabled selected>Event Topic</option>
+                        <option value="conference">Conference</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="workshop">Workshop</option>
+                    </select>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <select name="event_country" id="event_country" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" required>
+                        <option value="" disabled selected>Select Country</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="india">India</option>
+                    </select>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="state" id="state" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="state" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">State or Province</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="city" id="city" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="city" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">City</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="venu" id="venu" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="venu" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Venu</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="society" id="Society" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="Society" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Organizing Society</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="contact-person" id="contact-person" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="contact-person" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Contact Person for Event</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="email" name="enquiries_email" id="enquiries_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="enquiries_email" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Event Enquiries Email ID</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="website" id="website" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="website" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Website Address</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="date" name="event_start_date" id="event_start_date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="event_start_date" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Event Start Date</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="date" name="event_last_date" id="event_last_date" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="event_last_date" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last Day of Event</label>
+                </div>
+
+                <div class="relative z-0 w-full mb-5 group md:col-span-2">
+                    <input type="date" name="proposal-deadline" id="proposal-deadline" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder="" required />
+                    <label for="proposal-deadline" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Deadline for Abstracts/Proposals</label>
+                </div>
+               
+                
+                <div class="relative z-0 w-full mb-5 group md:col-span-2">
+                    <textarea name="event_description" id="event_description" rows="4" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required></textarea>
+                    <label for="event_description" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Short Description of Event</label>
+                </div>
+            </div>
+                <button type="submit" class="text-white text-md bg-red-500 w-full  focus:ring-4 focus:outline-none focus:ring-red-300 rounded-lg  text-center  border-[1px] border-red-500  font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out ">Submit</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- footer  -->
+    <footer class="bg-red-100">
+      <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div>
+            <div class="text-5xl">
+              LOGO
+            </div>
+    
+            <p class="mt-4 max-w-xs text-gray-500">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
+              molestias.
+            </p>
+    
+            <ul class="mt-8 flex gap-6 text-red-500 text-[28px] ">
+              <li><a href="#"><i class="bi bi-facebook hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+            </ul>
+          </div>
+    
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+            <div>
+              <p class="font-medium text-gray-900">Services</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Company</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Helpful Links</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Legal</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <p class="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

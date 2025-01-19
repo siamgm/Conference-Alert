@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+
+   <!-- Header -->
+    
+   <header class="header fixed top-0 left-0 w-full bg-transparent  text-white shadow-md z-50 transition-all ease-in-out">
+    <div class="container mx-auto flex items-center justify-between gap-3 py-4 px-6 relative">
+      <!-- Logo -->
+      <div class="font-bold text-xl">Logo</div>
+
+      <!-- Navigation -->
+      <nav id="menu" class="md:flex md:items-center space-x-6 hidden md:relative absolute md:bg-transparent bg-white top-0 left-0 md:py-0 px-0 md:flex-row md:gap-0 md:w-fit w-full flex-col gap-4 py-8">
+        <ul class="list-none flex md:flex-row flex-col md:ml-0 ml-6 md:space-x-6 space-y-4 md:space-y-0 w-full md:w-auto ">
+        <li><a href="/index.html" class="hover:text-red-500 transition-all">Home</a></li>
+        <li><a href="/pages/search.html" class="hover:text-red-500 transition-all">Search</a></li>
+        <li><a href="/pages/single-page.html" class="hover:text-red-500 transition-all">Single Page</a></li>
+        <li><a href="/pages/categoy.html" class="hover:text-red-500 transition-all">Category</a></li>
+        <li><a href="/pages/blog.html" class="hover:text-red-500 transition-all">Blog</a></li>
+        <li><a href="/pages/single-post.html" class="hover:text-red-500 transition-all">Single Post</a></li>
+        </ul>
+        <!-- Search Field -->
+        <div class="relative md:w-auto md:mb-0 mb-6">
+          <input
+        type="text"
+        placeholder="Search..."
+        class="pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:ring focus:ring-red-300 search-field md:w-full md:w-auto"
+          />
+          <button
+        type="button"
+        class="search-btn absolute right-2 top-0 translate-y-1/2 text-gray-500 hover:text-black"
+          >
+        <i class="bi bi-search"></i>
+          </button>
+        </div>
+         <!-- Button -->
+        <a href="/pages/add-event.html" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out w-full md:w-auto text-center">
+          <i class="bi bi-plus-lg"></i> Add Event
+        </a>
+      </nav>
+
+      <i id="menu-toggle" class="bi bi-list md:hidden block cursor-pointer text-[25px] relative "></i>
+  </header>
+
+<!-- hero section  -->
+    <section class="relative bg-[url('../assets/images/hero-bg.webp')] bg-cover bg-center text-white md:py-12 py-8 flex flex-col justify-center items-center before:absolute before:inset-0 before:bg-blue-950 before:bg-opacity-80 before:content-['']">
+
+        <div class="container max-w-[1200px] mx-auto md:py-12 flex flex-col justify-center items-center gap-5 px-2 relative">
+
+            <h1 class="text-center md:text-[80px] mt-12 text-[32px] md:w-4/5 " style="font-family: 'Staatliches', serif;">Business and Economics</h1>
+
+            <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg"><a href="#">Home</a> | <a href="#">Category</a></p>
+
+
+        </div>
+    </section>
+
+
+    <section class="info py-12 bg-[#fef8f7]">
+        <div class="container max-w-[1200px] mx-auto md:py-12 px-2">
+            <h2 class="text-4xl font-bold mb-6">Stay Updated, Never Miss Out</h2>
+            <p class="font-sans text-lg">Prepare yourself for an exciting journey of the mind, exploring the fascinating world of Business-and-economics. The upcoming Business-andæconomics conferences 2024-2025 in different countries invite Business-and-economics lovers for highly interactive intellectual sessions. From the fundamental study of Business-and-economics to its connections with other fields and subjects, there are various conference topics! Take the chance to listen to lectures by experts, join hands-on workshops. and share your research with people from all over the globe. Explore and understand complex concepts of Topic and see how they are used in real-life applications across different industries.Be up-to-date with your ideal international conference through our website! We will keep you informed of all the ongoing and upcoming events, registration deadlines, and other important details. Our exclusive list of Business-and-economics conferences will help you quickly find suitable events, You can also search Business-and-economics conferences for a specific region, date, or month. Sign up on our platform and register for gatherings that spark your interest!</p>
+        </div>
+    </section>
+
+
+    <!-- conferences  -->
+
+    <section class="py-12">
+        <div class="container max-w-[1200px] mx-auto px-4 md:py-12">
+            <h2 class="text-center text-4xl font-bold md:mb-5">Latest Updates on Global Events</h2>
+            <p class="mb-1 md:mb-6 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
+            <div class="flex flex-col md:flex-row gap-5">
+                <!-- filters  -->
+            <div class="bg-white flex flex-col gap-5 md:w-1/4">
+                <!-- continents  -->
+                <div class="continents pb-5 shadow-md rounded-lg overflow-hidden">
+                    <h3 class="bg-red-400 w-full py-2 text-center text-[20px] font-sans font-semibold text-white">Conferene by Continents</h3>
+                    <ul class="list-none p-4 flex flex-col gap-2">
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" id="africa" class="form-checkbox h-5 w-5 text-red-500">
+                            <label for="africa" class="text-gray-700">Africa</label>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" id="asia" class="form-checkbox h-5 w-5 text-red-500">
+                            <label for="asia" class="text-gray-700">Asia</label>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" id="europe" class="form-checkbox h-5 w-5 text-red-500">
+                            <label for="europe" class="text-gray-700">Europe</label>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" id="north-america" class="form-checkbox h-5 w-5 text-red-500">
+                            <label for="north-america" class="text-gray-700">North America</label>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" id="south-america" class="form-checkbox h-5 w-5 text-red-500">
+                            <label for="south-america" class="text-gray-700">South America</label>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" id="australia" class="form-checkbox h-5 w-5 text-red-500">
+                            <label for="australia" class="text-gray-700">Australia</label>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <input type="checkbox" id="antarctica" class="form-checkbox h-5 w-5 text-red-500">
+                            <label for="antarctica" class="text-gray-700">Antarctica</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- countries  -->
+                <div class="country pb-5 shadow-md rounded-lg overflow-hidden">
+                    <h3 class="bg-red-400 w-full py-2 text-center text-[20px] font-sans font-semibold text-white">Conferene by Continents</h3>
+                    <!-- search field  -->
+                    <div class="relative md:w-auto px-4 pt-4">
+                        <input
+                            type="text"
+                            placeholder="Search countries..."
+                            class="pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:ring focus:ring-red-300 search-field md:w-full md:w-auto"
+                        />
+                        <button
+                            type="button"
+                            class="search-btn absolute right-6 top-3 translate-y-1/2 text-gray-500 hover:text-black"
+                        >
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                    <ul class="list-none pl-4 pt-4 flex flex-col gap-2 overflow-y-auto max-h-[200px]">
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="usa" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="usa" class="text-gray-700">USA</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="canada" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="canada" class="text-gray-700">Canada</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="germany" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="germany" class="text-gray-700">Germany</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="japan" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="japan" class="text-gray-700">Japan</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="india" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="india" class="text-gray-700">India</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="brazil" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="brazil" class="text-gray-700">Brazil</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="australia" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="australia" class="text-gray-700">Australia</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="china" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="china" class="text-gray-700">China</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="france" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="france" class="text-gray-700">France</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="uk" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="uk" class="text-gray-700">UK</label>
+                    </li>
+                    </ul>
+                </div>
+                <!-- topics  -->
+                <div class="country pb-5 shadow-md rounded-lg overflow-hidden">
+                    <h3 class="bg-red-400 w-full py-2 text-center text-[20px] font-sans font-semibold text-white">Conferene by Continents</h3>
+                   
+                    <ul class="list-none pl-4 pt-4 flex flex-col gap-2 overflow-y-auto max-h-[200px]">
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="artificial-intelligence" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="artificial-intelligence" class="text-gray-700">Artificial Intelligence</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="renewable-energy" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="renewable-energy" class="text-gray-700">Renewable Energy</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="medical-sciences" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="medical-sciences" class="text-gray-700">Medical Sciences</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="environmental-studies" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="environmental-studies" class="text-gray-700">Environmental Studies</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="business-management" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="business-management" class="text-gray-700">Business Management</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="data-science" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="data-science" class="text-gray-700">Data Science</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="robotics" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="robotics" class="text-gray-700">Robotics</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="biotechnology" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="biotechnology" class="text-gray-700">Biotechnology</label>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <input type="checkbox" id="cloud-computing" class="form-checkbox h-5 w-5 text-red-500">
+                        <label for="cloud-computing" class="text-gray-700">Cloud Computing</label>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- conference  -->
+            <div class="bg-white md:p-6 rounded-lg shadow-lg  md:w-3/4 flex flex-col gap-6">
+
+                <!-- months  -->
+                <ul class="list-none m-6 md:m-0 h-[60px] flex items-center flex-nowrap  gap-4 overflow-x-auto scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-gray-200">
+                    <li class="min-w-fit"><a href="#" class="px-3 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all duration-300">Jan 2025</a></li>
+                    <li class="min-w-fit"><a href="#" class="px-3 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all duration-300">Feb 2025</a></li>
+                    <li class="min-w-fit"><a href="#" class="px-3 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all duration-300">Mar 2025</a></li>
+                    <li class="min-w-fit"><a href="#" class="px-3 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all duration-300">Apr 2025</a></li>
+                    <li class="min-w-fit"><a href="#" class="px-3 py-2 rounded-md border border-red-500 text-red-500 hover:bg-red-500 hover:text-white transition-all duration-300">May 2025</a></li>
+                </ul>
+
+                <!-- conference  -->
+                <div class="overflow-x-auto bg-white shadow-md ">
+                    <table class="w-full border-collapse shadow-lg rounded-lg overflow-hidden">
+                      <thead class="bg-red-400 text-white">
+                        <tr>
+                          <th class="p-4 text-left">Date</th>
+                          <th class="p-4 text-left">Conference Name</th>
+                          <th class="p-4 text-left">Venue</th>
+                        </tr>
+                      </thead>
+                      <tbody class="text-gray-600 bg-white">
+                        <tr class="hover:bg-red-300 hover:text-white">
+                          <td class="p-4">05 Feb</td>
+                          <td class="p-4">Global Conference on Artificial Intelligence</td>
+                          <td class="p-4">New York, USA</td>
+                        </tr>
+                        <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+                          <td class="p-4">12 Mar</td>
+                          <td class="p-4">World Conference on Renewable Energy</td>
+                          <td class="p-4">Berlin, Germany</td>
+                        </tr>
+                        <tr class="hover:bg-red-300  hover:text-white">
+                          <td class="p-4">18 Apr</td>
+                          <td class="p-4">International Conference on Medical Sciences</td>
+                          <td class="p-4">Tokyo, Japan</td>
+                        </tr>
+                        <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+                          <td class="p-4">25 May</td>
+                          <td class="p-4">International Conference on Environmental Studies</td>
+                          <td class="p-4">Cape Town, South Africa</td>
+                        </tr>
+                        <tr class="hover:bg-red-300  hover:text-white">
+                          <td class="p-4">10 Jun</td>
+                          <td class="p-4">Conference on Modern Business Management</td>
+                          <td class="p-4">Dubai, UAE</td>
+                        </tr>
+                        <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+                          <td class="p-4">15 Jul</td>
+                          <td class="p-4">Global Conference on Data Science</td>
+                          <td class="p-4">San Francisco, USA</td>
+                        </tr>
+                        <tr class="hover:bg-red-300  hover:text-white">
+                          <td class="p-4">20 Aug</td>
+                          <td class="p-4">International Conference on Robotics</td>
+                          <td class="p-4">Seoul, South Korea</td>
+                        </tr>
+                        <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+                          <td class="p-4">05 Sep</td>
+                          <td class="p-4">World Conference on Biotechnology</td>
+                          <td class="p-4">London, UK</td>
+                        </tr>
+                        <tr class="hover:bg-red-300  hover:text-white">
+                          <td class="p-4">30 Oct</td>
+                          <td class="p-4">International Conference on Cloud Computing</td>
+                          <td class="p-4">Toronto, Canada</td>
+                        </tr>
+                        <tr class="bg-[#fef8f7] hover:bg-red-300  hover:text-white">
+                          <td class="p-4">15 Nov</td>
+                          <td class="p-4">Global Conference on Cybersecurity</td>
+                          <td class="p-4">Sydney, Australia</td>
+                        </tr>
+                        <tr class="hover:bg-red-300  hover:text-white">
+                          <td class="p-4">10 Dec</td>
+                          <td class="p-4">International Conference on Quantum Computing</td>
+                          <td class="p-4">Zurich, Switzerland</td>
+                        </tr>
+                        <tr class="bg-[#fef8f7] hover:bg-red-300 hover:text-white">
+                            <td class="p-4">20 Jan</td>
+                            <td class="p-4">International Conference on Blockchain Technology</td>
+                            <td class="p-4">Singapore</td>
+                        </tr>
+                        <tr class="hover:bg-red-300 hover:text-white">
+                            <td class="p-4">15 Feb</td>
+                            <td class="p-4">Global Summit on Machine Learning</td>
+                            <td class="p-4">Paris, France</td>
+                        </tr>
+                        <tr class="bg-[#fef8f7] hover:bg-red-300 hover:text-white">
+                            <td class="p-4">10 Mar</td>
+                            <td class="p-4">World Congress on Internet of Things</td>
+                            <td class="p-4">Beijing, China</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              
+                  <!-- Pagination -->
+                  <ul class="flex space-x-2 min-h-12">
+                    <!-- Double Left Arrow -->
+                    <li>
+                      <a href="#" class="px-3 py-2 border border-gray-300 rounded hover:bg-red-500 hover:text-white transition-all duration-300">
+                        <i class="bi bi-chevron-double-left"></i>
+                      </a>
+                    </li>
+                    <!-- Left Arrow -->
+                    <li>
+                      <a href="#" class="px-3 py-2 border border-gray-300 rounded hover:bg-red-500 hover:text-white transition-all duration-300">
+                        <i class="bi bi-chevron-left"></i>
+                      </a>
+                    </li>
+                    <!-- Page Numbers -->
+                    <li>
+                      <a href="#" class="px-3 py-2 border border-gray-300 rounded hover:bg-red-500 hover:text-white transition-all duration-300">1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="px-3 py-2 border border-gray-300 rounded hover:bg-red-500 hover:text-white transition-all duration-300">2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="px-3 py-2 border border-gray-300 rounded hover:bg-red-500 hover:text-white transition-all duration-300">3</a>
+                    </li>
+                    <!-- Right Arrow -->
+                    <li>
+                      <a href="#" class="px-3 py-2 border border-gray-300 rounded hover:bg-red-500 hover:text-white transition-all duration-300">
+                        <i class="bi bi-chevron-right"></i>
+                      </a>
+                    </li>
+                    <!-- Double Right Arrow -->
+                    <li>
+                      <a href="#" class="px-3 py-2 border border-gray-300 rounded hover:bg-red-500 hover:text-white transition-all duration-300">
+                        <i class="bi bi-chevron-double-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- conference by category  -->
+
+    <section class="py-12 bg-[#fef8f7]">
+      <div class="container max-w-[1200px] mx-auto px-2 md:py-12 flex flex-col justify-center gap-5">
+          <h2 class="text-center text-4xl font-bold md:mb-3">Conference by Category</h2>
+          <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
+
+            
+          <ul class="topics list-none grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-y-8">
+            <!-- Accounting -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500 ">
+                <i class="bi bi-calculator mr-2 text-[40px]"></i> Accounting
+              </a>
+            </li>
+            <!-- Agriculture -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-tree mr-2 text-[40px]"></i> Agriculture
+              </a>
+            </li>
+            <!-- Economics -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-graph-up-arrow mr-2 text-[40px]"></i> Economics
+              </a>
+            </li>
+            <!-- Business -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-briefcase mr-2 text-[40px]"></i> Business
+              </a>
+            </li>
+            <!-- Education -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-book mr-2 text-[40px]"></i> Education
+              </a>
+            </li>
+            <!-- American Studies -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-flag mr-2 text-[40px]"></i> American Studies
+              </a>
+            </li>
+            <!-- Computer Education -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-laptop mr-2 text-[40px]"></i> Computer Education
+              </a>
+            </li>
+            <!-- Entrepreneurship -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-lightbulb mr-2 text-[40px]"></i> Entrepreneurship
+              </a>
+            </li>
+            <!-- Banking -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-piggy-bank mr-2 text-[40px]"></i> Banking
+              </a>
+            </li>
+            <!-- Critical Care -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-heart-pulse mr-2 text-[40px]"></i> Critical Care
+              </a>
+            </li>
+            <!-- Environment -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-globe mr-2 text-[40px]"></i> Environment
+              </a>
+            </li>
+            <!-- HRM -->
+            <li class="topic">
+              <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <i class="bi bi-person-workspace mr-2 text-[40px]"></i> HRM
+              </a>
+            </li>
+          </ul>
+          
+          
+            
+      </div>
+  </section>
+
+<!-- footer  -->
+<footer class="bg-red-100">
+    <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div>
+          <div class="text-5xl">
+            LOGO
+          </div>
+  
+          <p class="mt-4 max-w-xs text-gray-500">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
+            molestias.
+          </p>
+  
+          <ul class="mt-8 flex gap-6 text-red-500 text-[28px] ">
+            <li><a href="#"><i class="bi bi-facebook hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+            <li><a href="#"><i class="bi bi-linkedin hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+          </ul>
+        </div>
+  
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+          <div>
+            <p class="font-medium text-gray-900">Services</p>
+  
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div>
+            <p class="font-medium text-gray-900">Company</p>
+  
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div>
+            <p class="font-medium text-gray-900">Helpful Links</p>
+  
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div>
+            <p class="font-medium text-gray-900">Legal</p>
+  
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+              </li>
+  
+              <li>
+                <a href="#" class="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <p class="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+    <script src="../assets/js/script.js"></script>
+    </body>
+
+ </html>
