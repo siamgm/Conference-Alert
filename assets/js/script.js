@@ -77,3 +77,13 @@ function switchTab(event, tabId) {
   // Show the selected tab content
   document.getElementById(tabId).classList.remove('hidden');
 }
+
+
+// single page calendar btn
+
+const calendarBtn = document.getElementById('add-calendar');
+if(calendarBtn){
+  calendarBtn.addEventListener('click',function(){
+    document.getElementById('calendar').classList.toggle('hidden');
+  })
+}

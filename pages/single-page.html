@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+
+
+   <!-- Header -->
+    
+   <header class="header fixed top-0 left-0 w-full bg-transparent  text-white shadow-md z-50 transition-all ease-in-out">
+    <div class="container mx-auto flex items-center justify-between gap-3 py-4 px-6 relative">
+      <!-- Logo -->
+      <div class="font-bold text-xl">Logo</div>
+
+      <!-- Navigation -->
+      <nav id="menu" class="md:flex md:items-center space-x-6 hidden md:relative absolute md:bg-transparent bg-white top-0 left-0 md:py-0 px-0 md:flex-row md:gap-0 md:w-fit w-full flex-col gap-4 py-8">
+        <ul class="list-none flex md:flex-row flex-col md:ml-0 ml-6 md:space-x-6 space-y-4 md:space-y-0 w-full md:w-auto ">
+        <li><a href="/index.html" class="hover:text-red-500 transition-all">Home</a></li>
+        <li><a href="/pages/search.html" class="hover:text-red-500 transition-all">Search</a></li>
+        <li><a href="/pages/single-page.html" class="hover:text-red-500 transition-all">Single Page</a></li>
+        <li><a href="/pages/categoy.html" class="hover:text-red-500 transition-all">Category</a></li>
+        <li><a href="/pages/blog.html" class="hover:text-red-500 transition-all">Blog</a></li>
+        <li><a href="/pages/single-post.html" class="hover:text-red-500 transition-all">Single Post</a></li>
+        </ul>
+        <!-- Search Field -->
+        <div class="relative md:w-auto md:mb-0 mb-6">
+          <input
+        type="text"
+        placeholder="Search..."
+        class="pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:ring focus:ring-red-300 search-field md:w-full md:w-auto"
+          />
+          <button
+        type="button"
+        class="search-btn absolute right-2 top-0 translate-y-1/2 text-gray-500 hover:text-black"
+          >
+        <i class="bi bi-search"></i>
+          </button>
+        </div>
+         <!-- Button -->
+        <a href="/pages/add-event.html" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out w-full md:w-auto text-center">
+          <i class="bi bi-plus-lg"></i> Add Event
+        </a>
+      </nav>
+
+      <i id="menu-toggle" class="bi bi-list md:hidden block cursor-pointer text-[25px] relative "></i>
+  </header>
+  <main>
+<!-- hero section  -->
+    <section class="relative bg-[url('../assets/images/hero-bg.webp')] bg-cover bg-center text-white md:py-12 py-8 flex flex-col justify-center items-center before:absolute before:inset-0 before:bg-blue-950 before:bg-opacity-80 before:content-['']">
+
+        <div class="container max-w-[1200px] mx-auto md:py-12 flex flex-col justify-center items-center gap-5 px-2 relative">
+
+            <h1 class="text-center mt-12 text-5xl md:w-4/5 " style="font-family: 'Staatliches', serif;">International Conference on Environmental Studies</h1>
+
+          
+            <p class="text-center  mx-auto font-sans text-lg bg-white bg-opacity-30 p-4 rounded-lg inline-block ">
+                <span class="inline-flex items-center gap-2">
+                    <i class="bi bi-geo-alt"></i> New York, USA
+                </span>
+                <span class="inline-flex items-center gap-2 ml-4">
+                    <i class="bi bi-calendar"></i> December 12-14, 2025
+                </span>
+            </p>
+
+            <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg"><a href="#">Home</a> | <a href="#">Conference</a></p>
+        </div>
+    </section>
+
+<section class="objective md:py-24 py-12">
+    <div class="container max-w-[1200px] mx-auto md:flex gap-5 px-2 text-lg">
+
+        <!-- objective  -->
+        <div class="md:w-4/6 w-full border rounded-lg p-6 flex flex-col items-start gap-5">
+            <h2 class="text-3xl font-bold mb-4 pb-2 border-b border-red-500 w-full">Objective of the Conference</h2>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias.</p>
+
+            <a href="#calendar" id="add-calendar" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out w-full md:w-auto text-center mt-6">
+                <i class="bi bi-calendar-plus"></i> Add to Calendar
+            </a>
+            <div id="calendar" class=" gap-5 calendar border border-red-200 rounded-md p-4 w-full hidden">
+                <a href=""><img src="/assets/images/google-calendar-logo.webp" alt="" class="inline-block"></a>
+                <a href=""><img src="/assets/images/yahoo-logo.webp" alt="" class="inline-block ml-3"></a>
+            </div>
+
+            <h2 class="text-3xl font-bold mt-6 mb-4 pb-2 border-b border-red-500 w-full">Organiser Details</h2>
+            <table class="w-full text-left border-collapse">
+                <tr>
+                    <th class="border-b-2 py-2">Contact Person</th>
+                    <td class="border-b-2 py-2">John Richardson</td>
+                </tr>
+                <tr>
+                    <th class="border-b-2 py-2">Organized By</th>
+                    <td class="border-b-2 py-2">World Academics</td>
+                </tr>
+                <tr>
+                    <th class="border-b-2 py-2">Event Enquiries</th>
+                    <td class="border-b-2 py-2">info@worldacademics.net</td>
+                </tr>
+                <tr>
+                    <th class="border-b-2 py-2">Visit Website</th>
+                    <td class="border-b-2 py-2"><a href="#" class="text-red-500 hover:underline">Click here</a></td>
+                </tr>
+                <tr>
+                    <th class="border-b-2 py-2">Share this Conference</th>
+                    <td class="border-b-2 py-2"><div class="flex gap-4 text-2xl">
+                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-green-600 hover:text-green-800"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="text-blue-700 hover:text-blue-900"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="bi bi-twitter"></i></a>
+                    </div></td>
+                </tr>
+            </table>
+
+
+              
+            <!-- indexed in  -->
+            <h2 class="text-3xl font-bold my-4 pb-2 border-b border-red-500 w-full">Indexed In</h2>
+            <div class="flex flex-wrap gap-5 justify-center">
+                <img src="../assets/images/scopus-logo.webp" alt="" class="border rounded-lg">
+                <img src="../assets/images/spinger-logo.webp" alt="" class="border rounded-lg">
+                <img src="../assets/images/google-scholar-logo.webp" alt="" class="border rounded-lg">
+                <img src="../assets/images/dodi-directory-logo.webp" alt="" class="border rounded-lg">
+            </div>
+
+          
+
+          
+
+        </div>
+
+        <!-- sidebar  -->
+        <div class="md:w-2/6 w-full border rounded-lg p-6 flex flex-col items-start gap-5">
+            <h2 class="text-3xl font-bold pb-2 border-b border-red-500 w-full">Featured Events</h2>
+            <ul class="flex flex-col gap-4 featured-events">
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">International Conference on Environmental Studies</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> New York, USA
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Dec 12-14, 2025
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">Global Summit on Climate Change</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> London, UK
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Jan 20-22, 2026
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">Tech Innovations Conference</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> San Francisco, USA
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Mar 15-17, 2026
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">AI and Robotics Expo</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> Tokyo, Japan
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Apr 10-12, 2026
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">Medical Innovations Conference</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> Berlin, Germany
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> May 5-7, 2026
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">Sustainable Energy Conference</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> Sydney, Australia
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Jun 20-22, 2026
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">Blockchain and Fintech Summit</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> Dubai, UAE
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Jul 15-17, 2026
+                        </div>
+                    </div>
+                </a></li>
+            </ul>
+
+            <!-- similar events -->
+            <h2 class="text-3xl font-bold mt-6 mb-4 pb-2 border-b border-red-500 w-full">Similar Events</h2>
+
+            <ul class="flex flex-col gap-4 featured-events">
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">International Conference on Environmental Studies</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> New York, USA
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Dec 12-14, 2025
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">Global Summit on Climate Change</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> London, UK
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Jan 20-22, 2026
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">Tech Innovations Conference</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> San Francisco, USA
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Mar 15-17, 2026
+                        </div>
+                    </div>
+                </a></li>
+                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                    <h3 class="text-xl font-semibold">AI and Robotics Expo</h3>
+                    <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-geo-alt text-red-500"></i> Tokyo, Japan
+                        </div>
+                        <span class="mx-2 hidden sm:inline">|</span>
+                        <div class="flex items-center w-full sm:w-auto">
+                            <i class="bi bi-calendar mr-2 text-red-500"></i> Apr 10-12, 2026
+                        </div>
+                    </div>
+                </a></li>
+                
+              
+            </ul>
+          
+
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+
+<!-- footer  -->
+    <footer class="bg-red-100">
+      <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div>
+            <div class="text-5xl">
+              LOGO
+            </div>
+    
+            <p class="mt-4 max-w-xs text-gray-500">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
+              molestias.
+            </p>
+    
+            <ul class="mt-8 flex gap-6 text-red-500 text-[28px] ">
+              <li><a href="#"><i class="bi bi-facebook hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
+            </ul>
+          </div>
+    
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+            <div>
+              <p class="font-medium text-gray-900">Services</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Company</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Helpful Links</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+                </li>
+              </ul>
+            </div>
+    
+            <div>
+              <p class="font-medium text-gray-900">Legal</p>
+    
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <p class="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
