@@ -36,8 +36,6 @@
                     <i class="bi bi-calendar"></i> December 12-14, 2025
                 </span>
             </p>
-
-            <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg"><a href="/index.html">Home</a> | <a href="#" id="page-title">Page Title</a></p>
         </div>
     </section>
 
@@ -52,10 +50,10 @@
             <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse non cupiditate quae nam molestias.</p>
 
             <!-- add to calendar  -->
-            <p id="add-calendar" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out w-full md:w-auto text-center mt-6 cursor-pointer">
-                <i class="bi bi-calendar-plus"></i> Add to Calendar
+            <p id="add-calendar" class="text-lg text-red-500">
+                <i class="bi bi-calendar-plus mr-2"></i> Add to Calendar
             </p>
-            <div id="calendar" class=" gap-5 calendar border border-red-200 rounded-md p-4 w-full hidden">
+            <div id="calendar" class=" gap-5 calendar border border-red-200 rounded-md p-4 w-full">
                 <a href="https://calendar.google.com/" target="_blank"><img src="/assets/images/google-calendar-logo.webp" alt="Google Calendar" class="inline-block"></a>
                 <a href="https://calendar.yahoo.com/" target="_blank"><img src="/assets/images/yahoo-logo.webp" alt="Yahoo Calendar" class="inline-block ml-3"></a>
             </div>
@@ -109,8 +107,8 @@
         <!-- sidebar  -->
         <div class="md:w-2/6 w-full border rounded-lg p-6 flex flex-col items-start gap-5">
             <h2 class="md:text-left text-center text-3xl font-bold pb-2 border-b border-red-500 w-full">Featured Events</h2>
-            <ul class="flex flex-col gap-4 featured-events">
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+            <ul class="flex flex-col gap-4 overflow-y-auto max-h-[500px] featured-events">
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">International Conference on Environmental Studies</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -122,7 +120,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">Global Summit on Climate Change</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -134,7 +132,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">Tech Innovations Conference</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -146,7 +144,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">AI and Robotics Expo</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -158,7 +156,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">Medical Innovations Conference</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -170,7 +168,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"><a>
                     <h3 class="text-xl font-semibold">Sustainable Energy Conference</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -182,7 +180,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"><a>
                     <h3 class="text-xl font-semibold">Blockchain and Fintech Summit</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -199,8 +197,8 @@
             <!-- similar events -->
             <h2 class="md:text-left text-center text-3xl font-bold mt-6 mb-4 pb-2 border-b border-red-500 w-full">Similar Events</h2>
 
-            <ul class="flex flex-col gap-4 featured-events">
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+            <ul class="flex flex-col gap-4 overflow-y-auto max-h-80 similar-events">
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">International Conference on Environmental Studies</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -212,7 +210,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">Global Summit on Climate Change</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -224,7 +222,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">Tech Innovations Conference</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
@@ -236,7 +234,7 @@
                         </div>
                     </div>
                 </a></li>
-                <li class="border-b border-red-200 last:border-none"><a href="#" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out"></a>
+                <li class="border-b border-red-200 last:border-none"><a href="/pages/conference-details.html" class="flex flex-col gap-4 hover:text-red-500 transition-all duration-300 ease-in-out">
                     <h3 class="text-xl font-semibold">AI and Robotics Expo</h3>
                     <div class="flex flex-wrap items-center text-gray-600 text-sm mb-2">
                         <div class="flex items-center w-full sm:w-auto">
