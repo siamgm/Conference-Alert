@@ -32,6 +32,15 @@ menu.addEventListener('click', (event) => {
   }
 });
 
+// page title 
+document.addEventListener("DOMContentLoaded", function () {
+  const pageTitle = document.title; // Get the page title
+  const textElement = document.getElementById("page-title"); // Get the text element
+
+  // Set the text content to match the page title
+  textElement.textContent = pageTitle;
+});
+
 
 
 
