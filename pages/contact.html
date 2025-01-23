@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+</head>
+<body style=" font-family: 'Roboto', serif;">
+
+
+   <!-- Header -->
+    
+   <div id="header"></div>
+  <main>
+<!-- hero section  -->
+    <section class="relative bg-[url('../assets/images/hero-bg.webp')] bg-cover bg-center text-white md:py-12 py-8 flex flex-col justify-center items-center before:absolute before:inset-0 before:bg-blue-950 before:bg-opacity-80 before:content-['']">
+
+        <div class="container max-w-[1200px] mx-auto md:py-12 flex flex-col justify-center items-center gap-5 px-2 relative">
+
+            <h1 class="text-center md:text-[80px] mt-12 text-[32px] md:w-4/5 " style="font-family: 'Staatliches', serif;">Add Your Events</h1>
+
+            <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg"><a href="/index.html">Home</a> | <a href="#" id="page-title">Page Title</a></p>
+        </div>
+    </section>
+    
+<!-- Contact Us Section -->
+<section class="md:py-24 py-12 bg-[#fef8f7]">
+    <div class="container max-w-[1200px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Contact Info -->
+        <div class="flex flex-col bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-4">Contact Details</h2>
+            <p class="text-lg">Conference alert always welcomes your queries. Feel free to reach us regarding our upcoming training and workshop-related questions.</p>
+            <br>
+            <p class="mb-4"><i class="bi bi-geo-alt-fill text-red-500"></i> 123 Conference St, City, Country</p>
+            <p class="mb-4"><i class="bi bi-telephone-fill text-red-500"></i> +123 456 7890</p>
+            <p class="mb-4"><i class="bi bi-envelope-fill text-red-500"></i> contact@conference.com</p>
+            <p class="mb-4"><i class="bi bi-clock-fill text-red-500"></i> Mon - Fri: 9:00 AM - 6:00 PM</p>
+        </div>
+        <!-- Contact Form -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold  mb-8">Contact Us</h2>
+            <form action="#" method="POST" class="mx-auto">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="name" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="email" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="tel" name="phone" id="phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required />
+                    <label for="phone" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <textarea name="message" id="message" rows="4" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-red-500 peer" placeholder=" " required></textarea>
+                    <label for="message" class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-red-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+                </div>
+                <button type="submit" class="w-full bg-red-500 text-white py-2.5 rounded-lg hover:bg-red-600 transition duration-300">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- footer  -->
+<div id="footer"></div>
+
+
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

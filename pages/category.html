@@ -18,43 +18,7 @@
 
    <!-- Header -->
     
-   <header class="header fixed top-0 left-0 w-full bg-transparent  text-white shadow-md z-50 transition-all ease-in-out">
-    <div class="container mx-auto flex items-center justify-between gap-3 py-4 px-6 relative">
-      <!-- Logo -->
-      <div class="font-bold text-xl">Logo</div>
-
-      <!-- Navigation -->
-      <nav id="menu" class="md:flex md:items-center space-x-6 hidden md:relative absolute md:bg-transparent bg-white top-0 left-0 md:py-0 px-0 md:flex-row md:gap-0 md:w-fit w-full flex-col gap-4 py-8">
-        <ul class="list-none flex md:flex-row flex-col md:ml-0 ml-6 md:space-x-6 space-y-4 md:space-y-0 w-full md:w-auto ">
-        <li><a href="/index.html" class="hover:text-red-500 transition-all">Home</a></li>
-        <li><a href="/pages/search.html" class="hover:text-red-500 transition-all">Search</a></li>
-        <li><a href="/pages/single-page.html" class="hover:text-red-500 transition-all">Single Page</a></li>
-        <li><a href="/pages/categoy.html" class="hover:text-red-500 transition-all">Category</a></li>
-        <li><a href="/pages/blog.html" class="hover:text-red-500 transition-all">Blog</a></li>
-        <li><a href="/pages/single-post.html" class="hover:text-red-500 transition-all">Single Post</a></li>
-        </ul>
-        <!-- Search Field -->
-        <div class="relative md:w-auto md:mb-0 mb-6">
-          <input
-        type="text"
-        placeholder="Search..."
-        class="pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:ring focus:ring-red-300 search-field md:w-full md:w-auto"
-          />
-          <button
-        type="button"
-        class="search-btn absolute right-2 top-0 translate-y-1/2 text-gray-500 hover:text-black"
-          >
-        <i class="bi bi-search"></i>
-          </button>
-        </div>
-         <!-- Button -->
-        <a href="/pages/add-event.html" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out w-full md:w-auto text-center">
-          <i class="bi bi-plus-lg"></i> Add Event
-        </a>
-      </nav>
-
-      <i id="menu-toggle" class="bi bi-list md:hidden block cursor-pointer text-[25px] relative "></i>
-  </header>
+   <div id="header"></div>
 
 <!-- hero section  -->
     <section class="relative bg-[url('../assets/images/hero-bg.webp')] bg-cover bg-center text-white md:py-12 py-8 flex flex-col justify-center items-center before:absolute before:inset-0 before:bg-blue-950 before:bg-opacity-80 before:content-['']">
@@ -64,8 +28,6 @@
             <h1 class="text-center md:text-[80px] mt-12 text-[32px] md:w-4/5 " style="font-family: 'Staatliches', serif;">Business and Economics</h1>
 
             <p class="mb-1 text-center md:w-4/5 mx-auto font-sans text-lg"><a href="/index.html">Home</a> | <a href="#" id="page-title">Page Title</a></p>
-
-
         </div>
     </section>
 
@@ -448,95 +410,11 @@
   </section>
 
 <!-- footer  -->
-<footer class="bg-red-100">
-  <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-      <div>
-        <div class="text-5xl">
-          LOGO
-        </div>
-
-        <p class="mt-4 max-w-xs text-gray-500">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
-          molestias.
-        </p>
-
-        <ul class="mt-8 flex gap-6 text-red-500 text-[28px] ">
-          <li><a href="#"><i class="bi bi-facebook hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
-          <li><a href="#"><i class="bi bi-twitter-x hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
-          <li><a href="#"><i class="bi bi-instagram hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
-          <li><a href="#"><i class="bi bi-linkedin hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
-        </ul>
-      </div>
-
-      <div class="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
-        <div>
-          <p class="font-medium text-gray-900">Useful Links</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li><a href="/index.html" class="text-gray-700 transition hover:opacity-75"> Home </a></li>
-            <li><a href="/pages/about.html" class="text-gray-700 transition hover:opacity-75"> About </a></li>
-            <li><a href="/pages/faq.html" class="text-gray-700 transition hover:opacity-75"> FAQ </a></li>
-            <li><a href="/pages/contact.html" class="text-gray-700 transition hover:opacity-75"> Contact </a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-medium text-gray-900">Popular Topics</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li><a href="#" class="text-gray-700 transition hover:opacity-75"> Accounting </a></li>
-            <li><a href="#" class="text-gray-700 transition hover:opacity-75"> Banking </a></li>
-            <li><a href="#" class="text-gray-700 transition hover:opacity-75"> Business </a></li>
-            <li><a href="#" class="text-gray-700 transition hover:opacity-75"> Economics </a></li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-medium text-gray-900">Helpful Links</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-medium text-gray-900">Legal</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
-            </li>
-
-            <li>
-              <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <p class="text-xs text-gray-500 text-center">&copy; 2022. Company Name. All rights reserved.</p>
-  </div>
-</footer>
+<div id="footer"></div>
 
 
     <script src="../assets/js/script.js"></script>
+
     </body>
 
  </html>

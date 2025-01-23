@@ -17,44 +17,8 @@
 
 
    <!-- Header -->
-    
-   <header class="header fixed top-0 left-0 w-full bg-transparent  text-white shadow-md z-50 transition-all ease-in-out">
-    <div class="container mx-auto flex items-center justify-between gap-3 py-4 px-6 relative">
-      <!-- Logo -->
-      <div class="font-bold text-xl">Logo</div>
+   <div id="header"></div>
 
-      <!-- Navigation -->
-      <nav id="menu" class="md:flex md:items-center space-x-6 hidden md:relative absolute md:bg-transparent bg-white top-0 left-0 md:py-0 px-0 md:flex-row md:gap-0 md:w-fit w-full flex-col gap-4 py-8">
-        <ul class="list-none flex md:flex-row flex-col md:ml-0 ml-6 md:space-x-6 space-y-4 md:space-y-0 w-full md:w-auto ">
-        <li><a href="index.html" class="hover:text-red-500 transition-all">Home</a></li>
-        <li><a href="pages/search.html" class="hover:text-red-500 transition-all">Search</a></li>
-        <li><a href="pages/single-page.html" class="hover:text-red-500 transition-all">Single Page</a></li>
-        <li><a href="pages/categoy.html" class="hover:text-red-500 transition-all">Category</a></li>
-        <li><a href="pages/blog.html" class="hover:text-red-500 transition-all">Blog</a></li>
-        <li><a href="pages/single-post.html" class="hover:text-red-500 transition-all">Single Post</a></li>
-        </ul>
-        <!-- Search Field -->
-        <div class="relative md:w-auto md:mb-0 mb-6">
-          <input
-        type="text"
-        placeholder="Search..."
-        class="pl-3 pr-10 py-2 border border-gray-300 rounded-md focus:ring focus:ring-red-300 search-field md:w-full md:w-auto"
-          />
-          <button
-        type="button"
-        class="search-btn absolute right-2 top-0 translate-y-1/2 text-gray-500 hover:text-black"
-          >
-        <i class="bi bi-search"></i>
-          </button>
-        </div>
-         <!-- Button -->
-        <a href="pages/add-event.html" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out w-full md:w-auto text-center">
-          <i class="bi bi-plus-lg"></i> Add Event
-        </a>
-      </nav>
-
-      <i id="menu-toggle" class="bi bi-list md:hidden block cursor-pointer text-[25px] relative "></i>
-  </header>
   <main>
 <!-- hero section  -->
     <section class="relative bg-[url('assets/images/hero-bg.webp')] bg-cover bg-center text-white py-12 flex flex-col justify-center items-center before:absolute before:inset-0 before:bg-blue-950 before:bg-opacity-80 before:content-['']">
@@ -67,7 +31,7 @@
 
             <!-- <a href="#" class="px-5 py-4 bg-red-500 text-white inline-block mx-auto rounded-sm hover:bg-red-600 transition-all">Upcoming Conferences</a> -->
 
-            <form action="" class="min-w-fit flex flex-wrap items-end bg-red-200 rounded-md text-black">
+            <form action="/pages/search-results.html" class="min-w-fit flex flex-wrap items-end bg-red-200 rounded-md text-black">
                 <!-- Region Field -->
                 <div class="w-full sm:w-auto">
                   <!-- <label for="region" class="block text-gray-700 font-medium mb-1">Region:</label> -->
@@ -154,47 +118,47 @@
             <tbody class="text-gray-600 bg-white"></tbody>
             <tr class="hover:bg-red-300 hover:text-white">
               <td class="p-4">05 Feb</td>
-              <td class="p-4 hover:text-red-500"><a href="#">Global Conference on Artificial Intelligence</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">Global Conference on Artificial Intelligence</a></td>
               <td class="p-4">New York, USA</td>
             </tr>
             <tr class="bg-[#fef8f7] hover:bg-red-300 hover:text-white">
               <td class="p-4">12 Mar</td>
-              <td class="p-4 hover:text-red-500"><a href="#">World Conference on Renewable Energy</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">World Conference on Renewable Energy</a></td>
               <td class="p-4">Berlin, Germany</td>
             </tr>
             <tr class="hover:bg-red-300 hover:text-white">
               <td class="p-4">18 Apr</td>
-              <td class="p-4 hover:text-red-500"><a href="#">International Conference on Medical Sciences</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">International Conference on Medical Sciences</a></td>
               <td class="p-4">Tokyo, Japan</td>
             </tr>
             <tr class="bg-[#fef8f7] hover:bg-red-300 hover:text-white">
               <td class="p-4">25 May</td>
-              <td class="p-4 hover:text-red-500"><a href="#">International Conference on Environmental Studies</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">International Conference on Environmental Studies</a></td>
               <td class="p-4">Cape Town, South Africa</td>
             </tr>
             <tr class="hover:bg-red-300 hover:text-white">
               <td class="p-4">10 Jun</td>
-              <td class="p-4 hover:text-red-500"><a href="#">Conference on Modern Business Management</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">Conference on Modern Business Management</a></td>
               <td class="p-4">Dubai, UAE</td>
             </tr>
             <tr class="bg-[#fef8f7] hover:bg-red-300 hover:text-white">
               <td class="p-4">15 Jul</td>
-              <td class="p-4 hover:text-red-500"><a href="#">Global Conference on Data Science</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">Global Conference on Data Science</a></td>
               <td class="p-4">San Francisco, USA</td>
             </tr>
             <tr class="hover:bg-red-300 hover:text-white">
               <td class="p-4">20 Aug</td>
-              <td class="p-4 hover:text-red-500"><a href="#">International Conference on Robotics</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">International Conference on Robotics</a></td>
               <td class="p-4">Seoul, South Korea</td>
             </tr>
             <tr class="bg-[#fef8f7] hover:bg-red-300 hover:text-white">
               <td class="p-4">05 Sep</td>
-              <td class="p-4 hover:text-red-500"><a href="#">World Conference on Biotechnology</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">World Conference on Biotechnology</a></td>
               <td class="p-4">London, UK</td>
             </tr>
             <tr class="hover:bg-red-300 hover:text-white">
               <td class="p-4">30 Oct</td>
-              <td class="p-4 hover:text-red-500"><a href="#">International Conference on Cloud Computing</a></td>
+              <td class="p-4 hover:text-red-500"><a href="/pages/conference-details.html">International Conference on Cloud Computing</a></td>
               <td class="p-4">Toronto, Canada</td>
             </tr>
             </tbody>
@@ -203,7 +167,7 @@
       </div>
   
       <!-- Pagination -->
-      <ul class="flex space-x-2">
+      <ul class="flex space-x-2 mx-auto mt-4">
         <!-- Double Left Arrow -->
         <li>
           <a href="#" class="px-3 py-2 border border-gray-300 rounded hover:bg-red-500 hover:text-white transition-all duration-300">
@@ -254,73 +218,73 @@
             <ul class="topics list-none grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4 grid-cols-2 gap-y-8">
               <!-- Accounting -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500 ">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500 ">
                   <i class="bi bi-calculator mr-2 text-[40px]"></i> Accounting
                 </a>
               </li>
               <!-- Agriculture -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-tree mr-2 text-[40px]"></i> Agriculture
                 </a>
               </li>
               <!-- Economics -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-graph-up-arrow mr-2 text-[40px]"></i> Economics
                 </a>
               </li>
               <!-- Business -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-briefcase mr-2 text-[40px]"></i> Business
                 </a>
               </li>
               <!-- Education -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-book mr-2 text-[40px]"></i> Education
                 </a>
               </li>
               <!-- American Studies -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-flag mr-2 text-[40px]"></i> American Studies
                 </a>
               </li>
               <!-- Computer Education -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-laptop mr-2 text-[40px]"></i> Computer Education
                 </a>
               </li>
               <!-- Entrepreneurship -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-lightbulb mr-2 text-[40px]"></i> Entrepreneurship
                 </a>
               </li>
               <!-- Banking -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-piggy-bank mr-2 text-[40px]"></i> Banking
                 </a>
               </li>
               <!-- Critical Care -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-heart-pulse mr-2 text-[40px]"></i> Critical Care
                 </a>
               </li>
               <!-- Environment -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-globe mr-2 text-[40px]"></i> Environment
                 </a>
               </li>
               <!-- HRM -->
               <li class="topic">
-                <a href="#" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
+                <a href="/pages/category.html" class="flex flex-col justify-center text-center gap-3 h-[160px] w-[160px] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-black border-gray-200 transition-all hover:text-red-500 hover:border-red-500">
                   <i class="bi bi-person-workspace mr-2 text-[40px]"></i> HRM
                 </a>
               </li>
@@ -386,102 +350,102 @@
               <div id="tab1" class="tab-content">
                 <ul class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-lg border border-red-100 md:rounded-l-md rounded-r-none md:rounded-b-none rounded-b-md">
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Japan
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Bahrain
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Indonesia
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             South Korea
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Thailand
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Azerbaijan
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Hong Kong
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             UAE
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Maldives
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Lebanon
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             China
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Oman
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Saudi Arabia
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Malaysia
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             India
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Turkey
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Russia
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Kuwait
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Bangladesh
                         </a>
                     </li>
                     <li class="country border border-red-100 text-center">
-                        <a href="#" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
+                        <a href="/pages/category.html" class="block text-blue-950 hover:bg-red-300 hover:text-white transition-all p-4">
                             Iran
                         </a>
             </li>        </li>
@@ -892,73 +856,73 @@
         <ul class="months list-none grid lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4 grid-cols-2 md:gap-8 sm:gap-5 gap-3 ">
           <!-- January -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> January <br>2025
               </a>
           </li>
           <!-- February -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> February <br>2025
               </a>
           </li>
           <!-- March -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> March <br>2025
               </a>
           </li>
           <!-- April -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> April <br>2025
               </a>
           </li>
           <!-- May -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> May <br>2025
               </a>
           </li>
           <!-- June -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> June <br>2025
               </a>
           </li>
           <!-- July -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> July <br>2025
               </a>
           </li>
           <!-- August -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> August <br>2025
               </a>
           </li>
           <!-- September -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> September <br>2025
               </a>
           </li>
           <!-- October -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> October <br>2025
               </a>
           </li>
           <!-- November -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> November <br>2025
               </a>
           </li>
           <!-- December -->
           <li class="month">
-              <a href="#" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
+              <a href="/pages/category.html" class="flex flex-col justify-center gap-3 h-[150px] w-[100%] font-semibold text-lg bg-white border-[1px] rounded-lg items-center text-center text-black border-red-300 transition-all hover:text-white hover:bg-red-500 hover:border-red-500 transition-all duration-300 ease-in-out">
                   <img src="assets/images/calendar.png" alt="" class="w-12"> December <br>2025
               </a>
           </li>
@@ -975,7 +939,6 @@
     <h2 class="text-center text-4xl font-bold md:mb-3">Conference by Topics</h2>
             <p class="mb-1 text-center md:w-4/5 mx-auto  text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cupiditate consequuntur vel laborum, id amet temporibus totam cum dignissimos veniam! Dolorem, sint. Maxime voluptatum obcaecati minima, dolore natus neque quam?</p>
 
-            .
   <div class="flex flex-col md:flex-row gap-6">
     <!-- Column 1 -->
     <div class="bg-red-100 p-6 rounded-lg shadow-md flex-1 md:flex-none md:w-1/3">
@@ -998,62 +961,62 @@
     <div class="bg-red-100 p-6 rounded-lg shadow-md flex-1"><h3 class="text-2xl font-bold mb-4">Business & Economics</h3>
       <ul class="grid md:grid-cols-2 grid-cols-1 gap-3">
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i> Accounting
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i>E-commerce
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i> Insurance
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i>Banking and Finance
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i> Economics
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i> Management
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i> Business
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i> Entrepreneurship
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i></i> Marketing
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i>Business Ethics
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i> Human Resources
           </a>
         </li>
         <li class="w-full">
-          <a href="#" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
+          <a href="/pages/category.html" class="p-3 bg-white rounded-md w-full flex gap-3 hover:text-red-500 transition-all">
             <i class="bi bi-check2-all"></i> Supply Chain and Logistics
           </a>
         </li>
@@ -1073,7 +1036,7 @@
 
           <p>Welcome to Upcoming Conference Alert , your dedicated platform for finding and staying up-to-date on academic, scientific, and professional conferences worldwide. At Upcoming Conference Alert, we believe that knowledge-sharing events are essential for advancing academic, scientific, and professional communities. We provide comprehensive listings and timely alerts to connect scholars, researchers, Ph.D. candidates, and professionals with conferences that fit their interests and expertise, all on a single, easy-to-navigate platform.</p>
 
-          <a href="#" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out">
+          <a href="/pages/about.html" class="bg-red-500 text-white border-[1px] border-red-500 rounded-sm font-medium px-4 py-3 hover:bg-white hover:text-red-500 transition-all duration-300 ease-in-out">
              Read More <i class="bi bi-arrow-right-circle ml-2 text-lg"></i>
           </a>
         </div>
@@ -1085,93 +1048,8 @@
 </main>
 
 <!-- footer  -->
-    <footer class="bg-red-100">
-      <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div>
-            <div class="text-5xl">
-              LOGO
-            </div>
     
-            <p class="mt-4 max-w-xs text-gray-500">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
-              molestias.
-            </p>
-    
-            <ul class="mt-8 flex gap-6 text-red-500 text-[28px] ">
-              <li><a href="#"><i class="bi bi-facebook hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
-              <li><a href="#"><i class="bi bi-twitter-x hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
-              <li><a href="#"><i class="bi bi-instagram hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
-              <li><a href="#"><i class="bi bi-linkedin hover:text-black transition-all duration-300 ease-in-out"></i></a></li>
-            </ul>
-          </div>
-    
-          <div class="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
-            <div>
-              <p class="font-medium text-gray-900">Useful Links</p>
-    
-              <ul class="mt-6 space-y-4 text-sm">
-                <li><a href="/index.html" class="text-gray-700 transition hover:opacity-75"> Home </a></li>
-                <li><a href="/pages/about.html" class="text-gray-700 transition hover:opacity-75"> About </a></li>
-                <li><a href="/pages/faq.html" class="text-gray-700 transition hover:opacity-75"> FAQ </a></li>
-                <li><a href="/pages/contact.html" class="text-gray-700 transition hover:opacity-75"> Contact </a></li>
-              </ul>
-            </div>
-    
-            <div>
-              <p class="font-medium text-gray-900">Popular Topics</p>
-    
-              <ul class="mt-6 space-y-4 text-sm">
-                <li><a href="#" class="text-gray-700 transition hover:opacity-75"> Accounting </a></li>
-                <li><a href="#" class="text-gray-700 transition hover:opacity-75"> Banking </a></li>
-                <li><a href="#" class="text-gray-700 transition hover:opacity-75"> Business </a></li>
-                <li><a href="#" class="text-gray-700 transition hover:opacity-75"> Economics </a></li>
-              </ul>
-            </div>
-    
-            <div>
-              <p class="font-medium text-gray-900">Helpful Links</p>
-    
-              <ul class="mt-6 space-y-4 text-sm">
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
-                </li>
-              </ul>
-            </div>
-    
-            <div>
-              <p class="font-medium text-gray-900">Legal</p>
-    
-              <ul class="mt-6 space-y-4 text-sm">
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
-                </li>
-    
-              </ul>
-            </div>
-          </div>
-        </div>
-    
-        <p class="text-xs text-gray-500 text-center">&copy; 2022. Company Name. All rights reserved.</p>
-      </div>
-    </footer>
-
+<div id="footer"></div>
 
 
 
