@@ -1,43 +1,20 @@
-// Function to include header and footer
-document.addEventListener("DOMContentLoaded", function () {
-  const includeHTML = async (selector, file) => {
-    const response = await fetch(file);
-    if (response.ok) {
-      document.querySelector(selector).innerHTML = await response.text();
-    } else {
-      console.error(`Failed to load ${file}: ${response.status} ${response.statusText}`);
-    }
-  };
-
-  includeHTML("#header", "/partials/header.html");
-  includeHTML("#footer", "/partials/footer.html");
-});
 
 
 
-// Function to check if the header is dynamically loaded
-const waitForHeader = setInterval(() => {
-  const header = document.querySelector('.header');
-  const headerSearchField = document.querySelector('.search-field');
-
-  if (header && headerSearchField) {
-    // Stop checking once elements are found
-    clearInterval(waitForHeader);
-
-    // Add scroll listener
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 60) {
-        header.classList.add('bg-white', 'md:text-black');
-        header.classList.remove('bg-transparent', 'text-white');
-        headerSearchField.classList.remove('bg-transparent');
-      } else {
-        header.classList.add('bg-transparent', 'text-white');
-        header.classList.remove('bg-white', 'md:text-black');
-        headerSearchField.classList.add('bg-transparent');
-      }
-    });
-  }
-}, 100); // Check every 100ms
+    const header = document.querySelector('header');
+    const headerSearchField = document.querySelector('.header-search-field');
+    
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 60) {
+            header.classList.add('bg-white', 'md:text-black');
+            header.classList.remove('bg-transparent', 'text-white');
+            headerSearchField.classList.remove('bg-transparent');
+          } else {
+            header.classList.add('bg-transparent', 'text-white');
+            header.classList.remove('bg-white', 'md:text-black');
+            headerSearchField.classList.add('bg-transparent');
+          }
+        });
 
 
 
