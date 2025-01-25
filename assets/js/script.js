@@ -1,7 +1,5 @@
-
-
-
-    const header = document.querySelector('header');
+// change the color of the header when scrolling
+    const header = document.querySelector('.header');
     const headerSearchField = document.querySelector('.header-search-field');
     
         window.addEventListener('scroll', () => {
@@ -80,16 +78,3 @@ menu.addEventListener('click', (event) => {
     // Show the selected tab content
     document.getElementById(tabId).classList.remove('hidden');
   }
-
-
-
-
-
-// single page calendar btn
-
-// const calendarBtn = document.getElementById('add-calendar');
-// if(calendarBtn){
-//   calendarBtn.addEventListener('click',function(){
-//     document.getElementById('calendar').classList.toggle('hidden');
-//   })
-// }
