@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (response.ok) {
       document.querySelector(selector).innerHTML = await response.text();
     } else {
-      console.error(`Failed to load ${file}`);
+      console.error(`Failed to load ${file}: ${response.status} ${response.statusText}`);
     }
   };
 
