@@ -110,9 +110,9 @@ menu.addEventListener('click', (event) => {
 
 // single page calendar btn
 
-const calendarBtn = document.getElementById('add-calendar');
-if(calendarBtn){
-  calendarBtn.addEventListener('click',function(){
-    document.getElementById('calendar').classList.toggle('hidden');
-  })
-}
+// const calendarBtn = document.getElementById('add-calendar');
+// if(calendarBtn){
+//   calendarBtn.addEventListener('click',function(){
+//     document.getElementById('calendar').classList.toggle('hidden');
+//   })
+// }
